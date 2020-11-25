@@ -2,6 +2,7 @@ package com.api.project.steps;
 
 
 import com.api.project.model.CustomerPojo;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -17,7 +18,7 @@ public class CustomerSteps {
     private Response response;
 
 
-    @Given("^I have the data to create customer with \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
+    @Given("^I have the data to create customer with \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
     public void i_have_the_data_to_create_customer_with(String firstName, String lastName, String phone, String address1, String address2) throws Throwable {
 
 
@@ -54,4 +55,6 @@ public class CustomerSteps {
     public void response_body_should_contain(List<String> responseMap) {
 
     }
+
+
 }

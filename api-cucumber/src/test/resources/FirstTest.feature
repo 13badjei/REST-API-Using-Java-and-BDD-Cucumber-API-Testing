@@ -10,3 +10,4 @@ Feature: Is it Friday yet?
       | day     | answer |
       | Friday  | Yes    |
       | Tuesday | No     |
+
