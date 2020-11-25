@@ -2,7 +2,6 @@ package com.api.project.steps;
 
 
 import com.api.project.model.CustomerPojo;
-import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -10,6 +9,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CustomerSteps {
     CustomerPojo customer = new CustomerPojo();
@@ -17,7 +17,7 @@ public class CustomerSteps {
     private Response response;
 
 
-    @Given("^I have the data to create customer with \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\",$")
+    @Given("^I have the data to create customer with \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
     public void i_have_the_data_to_create_customer_with(String firstName, String lastName, String phone, String address1, String address2) throws Throwable {
 
 
@@ -26,9 +26,9 @@ public class CustomerSteps {
         addresses.add(address2);
 
         customer.setFirstName(firstName);
-        customer.setLastName(LastName);
+        customer.setLastName(lastName);
         customer.setPhone(phone);
-        customer.setAddresses(addresses)
+        customer.setAddresses(addresses);
     }
 
     @Given("^I use customer header$")
@@ -40,18 +40,18 @@ public class CustomerSteps {
     public void i_create_post_request_to_create_customer() throws Throwable {
 
     }
+    @When("^I create delete request to create customer$")
+    public void i_create_delete_request_to_create_customer() throws Throwable {
+
+    }
 
     @Then("^I get status code (\\d+) from database$")
-    public void i_get_status_code_from_database(int arg1) throws Throwable {
+    public void i_get_status_code_from_database(int statusCode) throws Throwable {
 
     }
 
     @Then("^response body should contain$")
-    public void response_body_should_contain(DataTable arg1) throws Throwable {
+    public void response_body_should_contain(List<String> responseMap) {
 
     }
-
-
-
-
 }
