@@ -20,7 +20,6 @@ public class CustomerSteps {
     public void i_have_the_data_to_create_customer_with(String firstName, String lastName, String phone, String address1, String address2) throws Throwable {
 
 
-
         ArrayList<String> addresses = new ArrayList<String>();
         addresses.add(address1);
         addresses.add(address2);
@@ -31,11 +30,13 @@ public class CustomerSteps {
         customer.setAddresses(addresses);
     }
 
-
-
     @Given("^I use customer header$")
     public void i_use_customer_header() throws Throwable {
-
+        //  request = given()
+        //            .header("Content-Type","application/json")
+        //            .header("Accept-Charset","UTF-8")
+        //            .log()
+        //            .headers();
     }
 
     @When("^I create post request to create customer$")
