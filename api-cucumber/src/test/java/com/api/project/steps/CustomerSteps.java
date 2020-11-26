@@ -16,9 +16,9 @@ public class CustomerSteps {
     private RequestSpecification request;
     private Response response;
 
-
     @Given("^I have the data to create customer with \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
     public void i_have_the_data_to_create_customer_with(String firstName, String lastName, String phone, String address1, String address2) throws Throwable {
+
 
 
         ArrayList<String> addresses = new ArrayList<String>();
@@ -30,6 +30,8 @@ public class CustomerSteps {
         customer.setPhone(phone);
         customer.setAddresses(addresses);
     }
+
+
 
     @Given("^I use customer header$")
     public void i_use_customer_header() throws Throwable {
