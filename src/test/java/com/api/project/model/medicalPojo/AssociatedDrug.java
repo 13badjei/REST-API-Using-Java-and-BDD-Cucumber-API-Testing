@@ -1,9 +1,8 @@
 package com.api.project.model.medicalPojo;
 
 /**
- * Created by Benjamin Adjei on 10/11/20
+ * Created by Benjamin Adjei on 14/12/20
  */
-
 public class AssociatedDrug
 {
     private String dose;
@@ -48,3 +47,4 @@ public class AssociatedDrug
         return "ClassPojo [dose = "+dose+", strength = "+strength+", name = "+name+"]";
     }
 }
+

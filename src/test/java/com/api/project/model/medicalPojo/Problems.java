@@ -1,7 +1,7 @@
 package com.api.project.model.medicalPojo;
 
 /**
- * Created by Benjamin Adjei on 11/12/20
+ * Created by Benjamin Adjei on 14/12/20
  */
 public class Problems
 {
@@ -23,3 +23,5 @@ public class Problems
         return "ClassPojo [Diabetes = "+Diabetes+"]";
     }
 }
+
+

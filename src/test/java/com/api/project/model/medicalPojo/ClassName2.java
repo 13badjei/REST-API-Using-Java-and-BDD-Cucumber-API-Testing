@@ -1,7 +1,7 @@
 package com.api.project.model.medicalPojo;
 
 /**
- * Created by Benjamin Adjei on 10/11/20
+ * Created by Benjamin Adjei on 14/12/20
  */
 
 public class ClassName2
@@ -36,3 +36,4 @@ public class ClassName2
         return "ClassPojo [associatedDrug = "+associatedDrug+", associatedDrug2 = "+associatedDrug2+"]";
     }
 }
+

@@ -1,5 +1,8 @@
 package com.api.project.model.medicalPojo;
 
+/**
+ * Created by Benjamin Adjei on 14/12/20
+ */
 public class MedicationsClasses
 {
     private ClassName2[] className2;
@@ -32,5 +35,3 @@ public class MedicationsClasses
         return "ClassPojo [className2 = "+className2+", className = "+className+"]";
     }
 }
-
-

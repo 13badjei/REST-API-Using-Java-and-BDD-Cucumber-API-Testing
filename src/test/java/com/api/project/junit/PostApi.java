@@ -8,17 +8,17 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 
 /**
- * Created by Benjamin Adjei on 11/12/20
+ * Created by Benjamin Adjei on 14/12/2020
  *
  * {
- "firstname": "Sherlock",
- "lastname": "Holmes",
- "address": {
- "streetAddress": "Baker St",
- "phone": 123456789,
- "email": "123@gmail.com"
- }
- }
+ * "firstName": "Sherlock",
+ * "lastName": "Holmes",
+ * "address": {
+ * "streetAddress": "Baker St.",
+ * "phone": 123456789,
+ * "email": "123@gmail.com"
+ * }
+ * }
  */
 public class PostApi {
 
@@ -31,20 +31,20 @@ public class PostApi {
         address.setPhone(123456789);
         address.setEmail("123@gmail.com");
 
-
         FirstUser user = new FirstUser();
         user.setFirstName("Sherlock");
         user.setLastName("Holmes");
         user.setAddressObject(address);
 
 
+
         given()
                 .contentType(ContentType.JSON)
                 .when()
                 .body(user)
-                .post("https://jsonplaceholder.typicode.com/users")
+                .get("https://jsonplaceholder.typicode.com/users")
                 .then()
-                .statusCode(201)
+                .statusCode(200)
                 .log()
                 .all();
 

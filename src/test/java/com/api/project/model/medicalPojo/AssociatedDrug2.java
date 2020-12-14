@@ -1,50 +1,41 @@
 package com.api.project.model.medicalPojo;
 
 /**
- * Created by Benjamin Adjei on 10/11/20
+ * Created by Benjamin Adjei on 14/12/20
  */
-
-public class AssociatedDrug2
-{
+public class AssociatedDrug2{
     private String dose;
 
     private String strength;
 
     private String name;
 
-    public String getDose ()
-    {
+    public String getDose (){
         return dose;
     }
 
-    public void setDose (String dose)
-    {
+public void setDose (String dose){
         this.dose = dose;
     }
 
-    public String getStrength ()
-    {
+public String getStrength (){
         return strength;
     }
 
-    public void setStrength (String strength)
-    {
+public void setStrength (String strength){
         this.strength = strength;
     }
 
-    public String getName ()
-    {
+public String getName (){
         return name;
     }
 
-    public void setName (String name)
-    {
+public void setName (String name){
         this.name = name;
     }
 
-    @Override
-    public String toString()
-    {
+@Override
+public String toString(){
         return "ClassPojo [dose = "+dose+", strength = "+strength+", name = "+name+"]";
     }
 }

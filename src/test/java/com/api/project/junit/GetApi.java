@@ -6,7 +6,7 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 
 /**
- * Created by Benjamin Adjei on 10/11/20
+ * Created by Benjamin Adjei on 14/12/20
  */
 public class GetApi {
     @Test
@@ -18,7 +18,6 @@ public class GetApi {
         System.out.println(response.body().asString());
 
     }
-
 
     @Test
     public void statusCode(){
