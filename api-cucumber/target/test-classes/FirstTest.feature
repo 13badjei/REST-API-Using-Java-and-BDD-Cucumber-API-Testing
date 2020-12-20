@@ -10,4 +10,4 @@ Feature: Is it Friday yet?
     Examples:
       | day     | answer |
       | Friday  | Yes    |
-      | Tuesday | Mo     |
+      | Tuesday | No    |
