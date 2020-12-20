@@ -4,12 +4,14 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
+/**
+ * Created by Ben Adjei on 20/12/20.
+ */
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src/test/resources")}
-//        plugin = {"pretty","html:target/cucumber-html-report"})
-//        plugins = {"pretty","html:target/cucumber-html-report","json:target/cucumber-json-report.json"})
-
+        features = {"src/test/resources"},
+//        plugin = { "pretty", "html:target/cucumber-html-report"})
+// plugin = { "pretty","html:target/cucumber-html-report"},"json:target/cucumber-json-report"})
 
 public class CucumberRunner {
 }
