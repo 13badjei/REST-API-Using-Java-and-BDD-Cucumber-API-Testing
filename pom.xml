@@ -3,8 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>RESTAPI_Using_Java_and_BDD_Cucumber</groupId>
-    <artifactId>RESTAPI_Using_Java_and_BDD_Cucumber</artifactId>
+
+    <groupId>api-rest-cucumber</groupId>
+    <artifactId>>api-rest-cucumberr</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
 
@@ -107,7 +108,6 @@
         </dependency>
 
     </dependencies>
-
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
